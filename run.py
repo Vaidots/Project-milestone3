@@ -37,3 +37,7 @@ def get_valid_word(words):
 
 def hangman():
     word = get_valid_word(words)
+    word_letters = set(word)  # letters in the word
+
+
+    
