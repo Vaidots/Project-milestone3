@@ -40,6 +40,17 @@ def get_valid_word(words):
 
 
 def hangman():
+    """
+    Username has 7 lives/tries
+    Generates random word from words.py
+    Counts how many letters the word has
+    User has to guess only alphabetic letters
+    Every letter guessed will be shown if correct and incorrect
+    Every incorrect try will take lives and progress in hangman visual
+    Correct letters will be show in the word
+    The loop will stop after the username guessed the word or reached 0 lives
+    After completion of the game an option to play again will be asked
+    """
     word = get_valid_word(words)
     word_letters = set(word)  # letters in the word
     alphabet = set(string.ascii_uppercase)
