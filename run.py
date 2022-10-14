@@ -56,7 +56,7 @@ def hangman():
         output = [letter if letter in used_letters else '_' for letter in word]
         print(lives_visual_dict[lives])
         print('The Current word: ', ' '.join(output))
-        
+
         user_letter = input('\nGuess a letter: ').upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
@@ -64,6 +64,10 @@ def hangman():
                 word_letters.remove(user_letter)
                 print('')
 
+            else:
+                lives = lives - 1  # takes away a life if wrong
+                print(f'Your letter {user_letter}, is not in the word.')
+                
         elif user_letter in used_letters:
             print('\nYou have already used that letter. Guess another letter.')
 
