@@ -53,5 +53,8 @@ def hangman():
                 word_letters.remove(user_letter)
                 print('')
 
+    elif user_letter in used_letters:
+            print('\nYou have already used that letter. Guess another letter.')            
+
 
     
