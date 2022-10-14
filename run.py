@@ -46,18 +46,21 @@ def hangman():
 
     lives = 7
 
-    user_letter = input('\nGuess a letter: ').upper()
-    if user_letter in alphabet - used_letters:
+    # getting user input
+    while len(word_letters) > 0 and lives > 0:
+        # letters used
+        print(f'You have {lives} ''lives left')
+        print('You already used these letters: ', ' '.join(used_letters))
+
+        user_letter = input('\nGuess a letter: ').upper()
+        if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
                 print('')
 
-    elif user_letter in used_letters:
+        elif user_letter in used_letters:
             print('\nYou have already used that letter. Guess another letter.')
 
-    else:
-            print('\nThat is not a valid letter.')                
-
-
-    
+        else:
+            print('\nThat is not a valid letter.')
