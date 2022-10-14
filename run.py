@@ -54,7 +54,10 @@ def hangman():
                 print('')
 
     elif user_letter in used_letters:
-            print('\nYou have already used that letter. Guess another letter.')            
+            print('\nYou have already used that letter. Guess another letter.')
+
+    else:
+            print('\nThat is not a valid letter.')                
 
 
     
