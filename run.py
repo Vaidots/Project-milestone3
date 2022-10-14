@@ -67,9 +67,15 @@ def hangman():
             else:
                 lives = lives - 1  # takes away a life if wrong
                 print(f'Your letter {user_letter}, is not in the word.')
-                
+
         elif user_letter in used_letters:
             print('\nYou have already used that letter. Guess another letter.')
 
         else:
             print('\nThat is not a valid letter.')
+
+    if lives == 0:
+        print(lives_visual_dict[lives])
+        print(f'You died, sorry. The word was, {word}')
+    else:
+        print(f'Congratulations! the word is {word}, !!')
