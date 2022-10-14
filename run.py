@@ -46,5 +46,12 @@ def hangman():
 
     lives = 7
 
+    user_letter = input('\nGuess a letter: ').upper()
+    if user_letter in alphabet - used_letters:
+            used_letters.add(user_letter)
+            if user_letter in word_letters:
+                word_letters.remove(user_letter)
+                print('')
+
 
     
