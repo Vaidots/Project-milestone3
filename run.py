@@ -2,6 +2,7 @@ import random
 from words import words
 import string
 from hangman_visual import lives_visual_dict
+import sys
 
 
 def welcome_user():
@@ -79,3 +80,13 @@ def hangman():
         print(f'You died, sorry. The word was, {word}')
     else:
         print(f'Congratulations! the word is {word}, !!')
+    
+    play_again = input(
+        '\nEnter y to play again or any other letter to quit:').strip().lower()
+
+    if play_again == 'y':
+        hangman()
+
+    else:
+        print('Goodbye!')
+        sys.exit(0)
