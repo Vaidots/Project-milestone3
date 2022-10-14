@@ -43,5 +43,7 @@ def hangman():
     alphabet = set(string.ascii_uppercase)
     used_letters = set()
 
+    lives = 7
+
 
     
