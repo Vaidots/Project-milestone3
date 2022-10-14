@@ -43,7 +43,7 @@ def hangman():
     word = get_valid_word(words)
     word_letters = set(word)  # letters in the word
     alphabet = set(string.ascii_uppercase)
-    used_letters = set()
+    used_letters = set()  # what the user has guessed
 
     lives = 7
 
@@ -74,7 +74,7 @@ def hangman():
 
         else:
             print('\nThat is not a valid letter.')
-
+    # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
         print(f'You died, sorry. The word was, {word}')
@@ -90,6 +90,9 @@ def hangman():
     else:
         print('Goodbye!')
         sys.exit(0)
+
+# 1. Module can be run as a standalone program
+# 2. Module can be imported and used by other modules
 
 
 if __name__ == '__main__':
