@@ -1,6 +1,7 @@
 import random
 from words import words
 import string
+from hangman_visual import lives_visual_dict
 
 
 def welcome_user():
