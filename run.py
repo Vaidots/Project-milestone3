@@ -80,7 +80,7 @@ def hangman():
         print(f'You died, sorry. The word was, {word}')
     else:
         print(f'Congratulations! the word is {word}, !!')
-    
+
     play_again = input(
         '\nEnter y to play again or any other letter to quit:').strip().lower()
 
@@ -90,7 +90,7 @@ def hangman():
     else:
         print('Goodbye!')
         sys.exit(0)
-        
+
 
 if __name__ == '__main__':
     hangman()
