@@ -33,3 +33,7 @@ def get_valid_word(words):
     """
     word = random.choice(words)  # randomly chooses word from the list
     return word.upper()     # Word come back capital letters
+
+
+def hangman():
+    word = get_valid_word(words)
