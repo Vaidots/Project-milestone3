@@ -13,3 +13,5 @@ def welcome_user():
 
     print('Welcome to Hangman')
     welcome_user()
+
+def get_valid_word(words):
