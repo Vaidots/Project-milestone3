@@ -128,3 +128,40 @@ The word to guess is represented by a row of dashes representing each letter of 
 
 
 [Back to top](#hangman-game)
+
+
+# Deployment 
+
+* The project was deployed using Code Institutes mock terminal for Heroku.
+  * Steps to deploy:
+1. Fork or clone this repository.
+2. Ensure the Procfile is in place.
+3. requirements.txt can be left empty as this project does not use any external libraries.
+4. Create a new app in Heroku.
+5. Select "New" and "Create new app".
+6. Name the new app and click "Create new app".
+7. In "Settings" select "BuildPack" and select Python and Node.js. (Python must be at the top of the list).
+8. Whilst still in "Settings", click "Reveal Config Vars" and input the folloing. KEY: PORT, VALUE: 8000.  
+9. Nothing else is needed here as this project does not have any sensitive files.
+10. Click on "Deploy" and select your deploy method and repository.
+11. Click "Connect" on selected repository.
+12. Either choose "Enable Automatic Deploys" or "Deploy Branch" in the manual deploy section.
+13. Heroku will now deploy the site.
+
+[Back to top](#hangman-game)
+
+# Credits
+
+* Thanks to Code Institute for the deployment terminal.
+* Stackoverflow
+* Fellow students in slack
+* [Tech with Tim](https://www.youtube.com/c/TechWithTim)
+* Youtube tutorial for hangman game [link](https://www.youtube.com/watch?v=m4nEnsavl6w)
+
+[Back to top](#hangman-game)
+
+# Special thanks
+
+* My mentor at Code Institute Brian Macharia for code review, help and feedback.
+
+[Back to top](#hangman-game)
