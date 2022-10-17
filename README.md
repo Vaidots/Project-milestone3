@@ -14,6 +14,18 @@ This is my third milestone project for Code Institute. Hangman game is a Python 
 The word to guess is represented by a row of dashes representing each letter of the word. If the suggested letter is in the word, it is written down, If guessed wrong it will progress the hangman picture and mark the used letter. This process is repeated until the hangman is completed or the user guesses the word.
 
 
+# Table of contents
+
+* [Hangman](#hangman-game)
+* [Project description](#project-description)
+* [Flow chart](#flow-chart)
+* [Future features](#future-features-to-implement)
+* [Technologies used](#technologies-used)
+* [Validation](#validation)
+* [Testing](#testing)
+
+
+
 # Flow chart
 
 ![flowchart](assets/HangmanDiagram.jpg)
