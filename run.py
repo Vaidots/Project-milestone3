@@ -1,8 +1,12 @@
+"""
+Hangman game
+"""
 import random
-from words import words
 import string
-from hangman_visual import lives_visual_dict
 import sys
+
+from hangman_visual import lives_visual_dict
+from words import words
 
 
 def welcome_user():
@@ -26,11 +30,7 @@ def welcome_user():
             break
 
 
-print('Welcome to Hangman')
-welcome_user()
-
-
-def get_valid_word(words):
+def get_valid_word():
     """
     Generates a random word from word.py
     The word will be generated capital letters
@@ -51,7 +51,7 @@ def hangman():
     The loop will stop after the username guessed the word or reached 0 lives
     After completion of the game an option to play again will be asked
     """
-    word = get_valid_word(words)
+    word = get_valid_word()
     word_letters = set(word)  # letters in the word
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
@@ -107,4 +107,6 @@ def hangman():
 
 
 if __name__ == '__main__':
+    print('Welcome to Hangman')
+    welcome_user()
     hangman()
