@@ -38,7 +38,7 @@ The word to guess is represented by a row of dashes representing each letter of 
   * First time user can easily follow the instruction
   * UX: as a first time or returning user, I want to receive a welcoming message.
 
-![Welcome](assets/Welcome.JPG)
+![Welcome](assets/images/Welcome.JPG)
 
 * Game starts
   * Random word is selected.
