@@ -1,6 +1,6 @@
 # Hangman Game
 
-![responsive](assets/responsive.pm3.JPG)
+![responsive](assets/images/responsive.pm3.JPG)
 
 [Link to Heroku](https://project-milestone3.herokuapp.com/
 )
@@ -28,7 +28,7 @@ The word to guess is represented by a row of dashes representing each letter of 
 
 # Flow chart
 
-![flowchart](assets/HangmanDiagram.jpg)
+![flowchart](assets/images/HangmanDiagram.jpg)
 
 [Back to top](#hangman-game)
 
@@ -47,43 +47,43 @@ The word to guess is represented by a row of dashes representing each letter of 
   * UX: as a first time or returning user, I want to see what stage I am at in the game.
   * UX: as a first time or returning user, I want to see how many letters in the word I have to guess.
 
-![Username](assets/Username.JPG)
+![Username](assets/images/Username.JPG)
 
 * Incorrect username
   * The player has to use only alphabetic letters to progress in the game.
 
-![incorrect username](assets/incorrectUsername.JPG)
+![incorrect username](assets/images/incorrectUsername.JPG)
 
 * Correct, incorrect guesses or have already guessed messages.
   * The player gets feedback after guessing.
   * UX: as a first time or returning user, I want to receive feedback on my guesses.
 
-![Correct guess](assets/CorrectGuess.JPG)
+![Correct guess](assets/images/CorrectGuess.JPG)
 
 * Correct word guess
   * Player receives a congratulations message after guessing the word.
   * Has an option to play again or quit.
   * UX: as a first time or returning user, I want to receive a nice message when won.
 
-![Guessed the word](assets/GuessedTheWord.JPG)
+![Guessed the word](assets/images/GuessedTheWord.JPG)
 
 * Failing to guess the word
   * Has an option to play again or quit.
   * UX: as a first time or returning user, I want to receive a comforting message when failling to guess the word.
 
-![fail to guess](assets/FailedToGuess.JPG)
+![fail to guess](assets/images/FailedToGuess.JPG)
 
 * Play again option
   * User can play again typing letter "y".
   * UX: as a first time or returning user, I want to have a chance to play again.
 
-![Play again](assets/PlayAgain.y.JPG)
+![Play again](assets/images/PlayAgain.y.JPG)
 
 * Username quits the game
   * User can quit the game by typing any letter except "y" to quit the game
   *  UX: as a first time or returning user, I want to have an option to quit the game.
 
-![Quit](assets/Quit.JPG)
+![Quit](assets/images/Quit.JPG)
 
 
 
@@ -126,17 +126,14 @@ The word to guess is represented by a row of dashes representing each letter of 
 4. Select pycodestyle from the list.
 5. PEP8 errors will now be underlined in red, as well as being listed in the PROBLEMS tab beside your terminal.
 
+* No errors was found 
+
 [Back to top](#hangman-game)
 
 
 # Testing
 
-* Checked if chosing numbers or symbols will get an error telling to use alphabetic letters only.
-* Checked if entering correct letter will be shown in the random word space.
-* Checked if entering incorrect letter will take a live and progress hangman picture.
-* Checked after answering the word or running out of lives gets an option to play again.
-* Checked when asked if you want to play again after pressing "y" the player can start guessing again.
-* Checked that any other letter pressed will end the game.
+![Testing](assets/images/Testing%20table1.jpg)
 
 
 [Back to top](#hangman-game)
